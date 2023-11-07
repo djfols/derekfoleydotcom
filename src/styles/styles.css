@@ -1,0 +1,191 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --bg-dark: #262225;
+  --text-light: #262225;
+  --bg-light: #ECEBE9;
+  --dk-blue: #29354B;
+  --teal: #4C8891;
+  --lt-green: #A0C8C3;
+  --text-dark: #ECEBE9;
+}
+
+
+.p-1 {
+  padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.p-10 {
+  padding: 2.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.theme-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.theme-light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex
+}
+
+.fixed {
+  position: fixed;
+}
+
+.inherit-width {
+  width: inherit
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.rounded-button {
+  width: calc(100% - 24px);
+  border: 2px solid var(--text-light);
+  border-radius: 8px;
+  padding: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+.theme-dark .rounded-button {
+  border: 2px solid var(--text-dark);
+  color: var(--text-dark)
+}
+
+.rounded-button:hover {
+  background-color: var(--dk-blue);
+  color: var(--bg-light);
+}
+
+.theme-dark .rounded-button:hover {
+  background-color: var(--lt-green);
+  color: var(--bg-dark);
+}
+
+.sidebar {
+  width: 0px;
+  height: 100vh;
+  transition: width 0.3s;
+  border-right: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.sidebar.open {
+  width: 150px;
+  margin: right;
+  border-right-color: var(--text-light); 
+}
+
+.sidebar-icon {
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.theme-dark .sidebar {
+  border-color: var(--text-dark);
+}
+
+.theme-light .sidebar {
+  border-color: var(--text-light);
+}
+
+.centered-flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.radial-background {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(ellipse at bottom, var(--bg-light) 0%, var(--bg-dark) 100%);
+  overflow: hidden;
+}
