@@ -10,6 +10,8 @@
   --teal: #4C8891;
   --lt-green: #A0C8C3;
   --text-dark: #ECEBE9;
+  --logo-path-light: url('../images/logoDark.png');
+  --logo-path-dark: url('../images/logo.png');
 }
 
 .p-1 {
@@ -207,10 +209,16 @@ body, html {
 }
 
 .logo {
-  transform: translateY(-150%) rotate(0deg);
-  transition: transform 1.5s;
+  content: var(--logo-path-light);
+  display: block;
   width: 100px;
   margin: 24px;
+  transition: transform 1.5s;
+  transform: translateY(-150%) rotate(0deg);
+}
+
+.theme-dark .logo {
+  content: var(--logo-path-dark);
 }
 
 @keyframes slideAndRotate {

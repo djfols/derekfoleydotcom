@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from 'react'
 import Section from '../Section';
-import Logo from '../../images/logo.png';
 
 const Home = () => {
     const logoRef = useRef<HTMLImageElement | null>(null);
@@ -44,7 +43,7 @@ const Home = () => {
         <div className='flex'>
             <Section>
                 <div className='centered-row'>
-                    <img className='logo' ref={logoRef} src={Logo} style={{width: '100px'}}/>
+                    <img className='logo' ref={logoRef} style={{width: '100px'}}/>
                     <div id="home-text-container" className='jetbrainFont ' ref={homeTextContainerRef}></div>   
                 </div>
             </Section>
