@@ -12,12 +12,16 @@ const Layout = ({ children }: PropsWithChildren<LayoutProps>) => {
   return (
     <div className="flex">
         <SideBar>
-            <Link to="/">
-                <Home />
-            </Link>
-            <Link to="/resume">
-                <Description />
-            </Link>
+            <div className='py-3'>
+                <Link to="/">
+                    <Home style={{width: "50px", height: "50px"}}/>
+                </Link>
+            </div>
+            <div className='py-3'>
+                <Link to="/resume">
+                    <Description style={{width: "50px", height: "50px"}}/>
+                </Link>
+            </div>
             <DarkModeToggle />
         </SideBar>      
         <div className="content">

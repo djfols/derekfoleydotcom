@@ -1,13 +1,16 @@
-import React from 'react'
-
+import React, { ReactNode, PropsWithChildren  } from 'react'
 interface SectionProps {
-    sectionStyle?: string | undefined
+    sectionStyle?: string | undefined,
+    children: ReactNode
 }
-const Section = (props: SectionProps) => {
+const Section = (props: PropsWithChildren<SectionProps>) => {
+
+    const {sectionStyle, children} = props;
+
     return(
-        <div className={`${props.sectionStyle ? props.sectionStyle + ' px-4' : 'px-4'}`}>
+        <div className={`${sectionStyle ? sectionStyle + 'px-4' : 'px-4'}`}>
             <div style={{height: '100vh'}}>
-                STUFF
+                {children}
             </div>
         </div>
     )

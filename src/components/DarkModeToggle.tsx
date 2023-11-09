@@ -9,15 +9,15 @@ const DarkModeToggle = () => {
     <button onClick={toggleDarkMode}>
       {
         isDarkMode ? 
-        <div>
+        <div className='py-3'>
           <LightbulbOutlined 
-            style={{width: "40px", height: "40px"}}
+            style={{width: "50px", height: "50px"}}
           />
         </div>
           : 
-        <div> 
+        <div className='py-3'> 
           <Lightbulb 
-            style={{width: "40px", height: "40px"}}
+            style={{width: "50px", height: "50px"}}
           />
         </div>       
       }
