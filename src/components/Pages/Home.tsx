@@ -44,7 +44,7 @@ const Home = () => {
             <Section>
                 <div className='centered-row'>
                     <img className='logo' ref={logoRef} style={{width: '100px'}}/>
-                    <div id="home-text-container" className='jetbrainFont ' ref={homeTextContainerRef}></div>   
+                    <div className='font-jetBrains tracking-widest text-6xl' ref={homeTextContainerRef}></div>   
                 </div>
             </Section>
         </div>

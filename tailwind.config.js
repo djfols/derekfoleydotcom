@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export const purge = [
-  '.src/**/*.html',
-  '.src/**/*.tsx',
-  '.src/**/*.html',
+  './src/**/*.html',
+  './src/**/*.tsx',
 ];
 export const theme = {
   extend: {
@@ -23,8 +22,9 @@ export const theme = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
-      mono: ['Consolas', 'serif']
-    },
+      mono: ['Consolas', 'serif'],
+      jetBrains: ['Jetbrains Mono', 'monospace']
+    }
   }
 };
 
