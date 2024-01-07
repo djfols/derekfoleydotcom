@@ -8,12 +8,23 @@ export interface Job {
 }
 
 const workHistory: Job[] = [
+  {
+    jobTitle: 'Senior React Developer',
+    employer: 'JPMorgan Chase',
+    location: 'Columbus, OH',
+    startDate: '2024',
+    endDate: 'Present',
+    details: [
+      'Build and maintain JPMorgan Business web services',
+      'Create new components and micro frontend applications using a microapp architecture'
+    ],
+  },
     {
       jobTitle: 'Software Engineer',
       employer: 'Roofsnap',
       location: 'Columbus, OH',
       startDate: '2021',
-      endDate: 'Present',
+      endDate: '2023',
       details: [
         'Develop and maintain roof sketching web application and estimating platform using React, JavaScript, TypeScript, SQL, and .NET utilizing Azure to build and release features',
         'Created end-to-end tests using Cypress and unit tests using Jest',

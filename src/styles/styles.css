@@ -24,6 +24,18 @@
   color: var(--text-light);
 }
 
+.opaque-bg-dark {
+  background-color: var(--bg-dark);
+  opacity: 0.4; /* Set opacity value between 0 and 1 */
+  color: var(--text-light);
+}
+
+.opaque-bg-light {
+  background-color: var(--bg-light);
+  opacity: 0.4;
+  color: var(--text-dark);
+}
+
 @font-face {
   font-family: 'JetBrains Mono';
   src: url('../../public/fonts/JetBrainsMono-Regular.ttf') format('tff');
@@ -47,6 +59,7 @@ body, html {
 ul {
   list-style-type: disc;
 }
+
 .flex {
   display: flex
 }
@@ -61,6 +74,10 @@ ul {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.opaque-background {
+  background-color: ;
 }
 
 .rounded-button {
@@ -181,4 +198,20 @@ ul {
 .centered-row {
   display: flex;
   align-items: center;
+}
+
+.animatedDiv {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  animation: fadeIn 4s;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
